@@ -1,0 +1,272 @@
+.selected-place{
+
+}
+.selected-place a{
+    font-size: 4rem;
+    color: pink;
+    margin-left: 3%;
+}
+.selected-place .box-1{
+    display: flex;
+    box-shadow: 15px 15px 15px rgb(255, 211, 157);
+    margin: 0.5%;
+    align-items: start;
+    justify-content: space-between;
+}
+.selected-place .box-1 .place-details{
+    width: 40vw;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0;
+}
+
+.place-details h1 {
+    margin-left: 4%;
+    font-size: 2.9rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.place-details ul {
+    margin-left: 4%;
+    list-style-type: none;
+}
+.place-details ul li{
+    font-size: 1.8rem;
+    max-height: 30vh;
+    overflow: hidden;
+    background: #ff9090;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li svg {
+    margin-left: 4%;
+    margin-top: 2%;
+    font-size: 2.2rem;
+}
+.place-details .btns{
+    margin-left: 2%;
+    padding: 2.5%;
+}
+.place-details button{
+    font-size: 2.7rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    margin: 3%;
+    border: none;
+    background: #AA3232;
+}
+.box-2{
+    max-width: 43%;
+    margin-top: 2%;
+}
+.box-2 h1 {
+    display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box-1 .place-pics{
+    width: 35vw;
+    height: 50vh;
+    margin: 4%;
+    margin-right: 2%;
+    overflow-x: scroll;
+    display: flex;
+}
+.box-1 .place-pics::-webkit-scrollbar{
+    display: none;
+}
+.place-pics img{
+    min-height: 90%;
+    min-width: 100%;
+}
+.box-2  .paragraph {
+
+}
+.selected-place .paragraph p{
+    text-align:left;
+    font-size: 2rem;
+    margin: 5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (680px < width < 820px){
+    .selected-place .box-1 .place-details{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .place-details h1{
+        font-size: 2.6rem;
+    }
+    .place-details ul li{
+        font-size: 1.6rem;
+    }
+    .place-details button{
+        padding: 1.2%;
+        font-size: 2.4rem;
+    }
+    .box-1 .place-pics{
+        width: 35vw;
+        height: 47vh;
+        margin-right: 0%;
+    }
+    .place-pics img {
+    min-height: 80%;
+    max-height: 85%;
+    }
+}
+@media only screen and (540px < width <=680px){
+    .selected-place .box-1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 10%;
+    }
+
+    .box-2 {
+        max-width: 80%;
+        display: flex;
+        margin-top: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-1 .place-pics {
+        width: 70vw;
+        height: 60vh;
+    }
+    .selected-place .paragraph p {
+        text-align: center;
+        margin: 2%;
+    }
+    .place-details h1 {
+        margin: 1.2rem;
+        margin-left: 0;
+        font-size: 3.2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    .selected-place .box-1 .place-details{
+        width: 80vw;
+    }
+    .place-details h1 {
+        display: none;
+    }
+    .place-details ul li{
+        max-width: 80%;
+        justify-content: center;
+    }
+    .place-details ul li svg{
+        font-size: 2.3rem;
+        margin-right: 20%;
+    }
+}
+@media only screen and (480px <= width  <= 540px){
+    .selected-place .box-1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 6%;
+    }
+    .box-2 {
+        max-width: 80%;
+        display: flex;
+        margin-top: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .place-details h1 {
+        margin: 1.2rem;
+        margin-left: 0;
+        display: none;
+        font-size: 3.2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    .box-2 h1 {
+        font-size: 2.7rem;
+    }
+    .box-1 .place-pics {
+        width: 70vw;
+        height: 55vh;
+    }
+    /* .place-details h1 {
+        position: absolute;
+        top: 23vh;
+        left: 12%;
+        margin: 1.2rem;
+        margin-left: 0;
+        font-size: 3.2rem;
+    } */
+    .selected-place .box-1 .place-details{
+        width: 90vw;
+    }
+    .place-details ul li{
+        max-width: 80%;
+        justify-content: center;
+    }
+    .place-details ul li svg{
+        font-size: 2.3rem;
+        margin-left: 20%;
+    }
+
+}
+@media only screen and (width < 480px){
+    .selected-place{
+
+    }
+    .selected-place a{
+        font-size: 3rem;
+    }
+    .selected-place a svg{
+        margin-top: 2.5%;
+    }
+    .selected-place .box-1 {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 5%;
+    }
+    .box-2 {
+        max-width: 80%;
+        display: flex;
+        margin-top: 2%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-2 h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .box-1 .place-pics {
+        width: 80vw;
+        height: 45vh;
+    }
+    .place-details h1 {
+        margin: 0.7rem;
+        display: none;
+        margin-left: 0;
+        font-size: 2.5rem;
+    }
+    .selected-place .box-1 .place-details{
+        width: 90vw;
+    }
+    .place-details ul li{
+        max-width: 80%;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .place-details ul li svg{
+        font-size: 2.3rem;
+        margin-left: 10%;
+    }
+    .selected-place .paragraph p::before{
+        content: "Description         ";
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+    .selected-place .paragraph p {
+        font-size: 1.5rem;
+    }
+    .place-details .btns{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .place-details button{
+        margin: 1.5%;
+        font-size: 2rem;
+    }
+}
