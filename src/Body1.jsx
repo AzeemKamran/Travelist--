@@ -27,7 +27,7 @@ const Body1 = ({optionclick}) => {
 
             <section className='text-content'>
                 <h1>Travelist -</h1><h2>World's leading platform</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sit repellendus quisquam rerum veritatis alias harum quae eligendi ut itaque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi temporibus eaque eligendi amet excepturi tempora maiores illo voluptate nobis suscipit?</p>
+                <p>Welcome to Wanderlust, your gateway to the world's most breathtaking destinations! Dive into our curated collection of stunning images and inspiring travel ideas, designed to ignite your wanderlust and guide you to the most beautiful places on Earth</p>
             </section>
 
             <section className="trending">
